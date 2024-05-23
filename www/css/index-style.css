@@ -73,3 +73,12 @@ p {
     justify-content: center;
     margin-top: 4vh;
 }
+
+@media (orientation: landscape) {
+    .logo {
+        display: none;
+    }
+    body {
+        justify-content: center;
+    }
+}
