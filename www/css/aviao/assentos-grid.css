@@ -1,0 +1,47 @@
+.aviao {
+    --cell-size: 1fr;
+}
+
+.aviao {
+    /* width: 100%;
+    height: 100%; */
+    flex: 1;
+    padding: 0 4px;
+}
+
+.aviao {
+    display: grid;
+    grid-template-columns:
+        fit-content(3ch)
+        repeat(10, minmax(20px, var(--cell-size)));
+    grid-template-rows:
+        repeat(3, minmax(20px, var(--cell-size))) fit-content(3ch)
+        repeat(3, minmax(20px, var(--cell-size))) fit-content(3ch)
+        repeat(3, minmax(20px, var(--cell-size)));
+    grid-auto-flow: column;
+    gap: 0.12rem;
+    justify-content: center;
+}
+
+@media (orientation: portrait) {
+    .aviao {
+        grid-template-columns:
+            repeat(3, minmax(20px, var(--cell-size))) fit-content(3ch)
+            repeat(3, minmax(20px, var(--cell-size))) fit-content(3ch)
+            repeat(3, minmax(20px, var(--cell-size)));
+        grid-template-rows:
+            fit-content(3ch)
+            repeat(10, minmax(20px, var(--cell-size)));
+        grid-auto-flow: row;
+    }
+}
+
+.column-label,
+.row-label {
+    display: grid;
+    place-items: center;
+}
+
+.row-label.empty-space {
+    visibility: hidden;
+}

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="../css/aviao/assentos-grid.css" />
+        <link rel="stylesheet" href="../css/aviao/style.css" />
+    </head>
+    <body>
+        <div class="modal">
+            <div class="wrapper">
+                <div
+                    class="container"
+                    style="display: flex; flex-direction: column"
+                >
+                    <div
+                        class="dados-assento"
+                        style="display: flex; justify-content: space-evenly"
+                    >
+                        <div style="text-align: center">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 -960 960 960"
+                                fill="gray"
+                                style="width: 3rem"
+                            >
+                                <path
+                                    d="M313.33-733.33q-30.33 0-51.5-21.17-21.16-21.17-21.16-51.5t21.16-52.17Q283-880 313.33-880q30.34 0 52.17 21.83 21.83 21.84 21.83 52.17 0 30.33-21.83 51.5t-52.17 21.17Zm244.67 560H284.67q-28.34 0-49.84-19.17-21.5-19.17-27.16-47.5l-91-456.67H186L273.33-240H558v66.67ZM791.33-80 674-283.33H372q-27 0-47.83-15.84Q303.33-315 298-341.33L252-578q-9.67-46.67 22.83-82.67t80.5-36q35 0 61.17 22T450-618l45.33 227.33h154q20.34 0 36.34 11.67 16 11.67 26.33 29l138 236.67L791.33-80Z"
+                                />
+                            </svg>
+                            <br />
+                            <span style="font-size: 1.2em; font-weight: bold"
+                                >A1</span
+                            >
+                        </div>
+                        <div style="text-align: center">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 -960 960 960"
+                                style="width: 3rem"
+                                fill="green"
+                            >
+                                <path
+                                    d="M447.67-120v-84.67Q392-215.33 354.83-249q-37.16-33.67-53.83-88.33l62-25.34q16.33 48 47.5 72t77.17 24q45.66 0 75.83-22.16Q593.67-311 593.67-352T568-415.83Q542.33-438.67 465-464q-76.67-24.33-111-62.17Q319.67-564 319.67-620q0-58.33 37.66-95 37.67-36.67 90.34-41.67V-840h66.66v83.33q46.67 6 79.17 31.84Q626-699 642.33-660l-62 26.67q-13.33-32-36.33-47t-61-15q-45.33 0-71 20.5t-25.67 54.16q0 36.34 30 58.34T525-516.67q68.33 20.67 101.83 61.5 33.5 40.84 33.5 99.84 0 65.66-38.66 103.66-38.67 38-107.34 48.34V-120h-66.66Z"
+                                />
+                            </svg>
+                            <br />
+                            <span style="font-size: 1.2em; font-weight: bold"
+                                >R$5000,00</span
+                            >
+                        </div>
+                    </div>
+                    <div
+                        class="nome-pessoa"
+                        style="
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            flex-direction: column;
+                        "
+                    >
+                        <div class="icone-pessoa" style="text-align: center">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 -960 960 960"
+                                style="width: 3rem"
+                                fill="gray"
+                            >
+                                <path
+                                    d="M480-480.67q-66 0-109.67-43.66Q326.67-568 326.67-634t43.66-109.67Q414-787.33 480-787.33t109.67 43.66Q633.33-700 633.33-634t-43.66 109.67Q546-480.67 480-480.67ZM160-160v-100q0-36.67 18.5-64.17T226.67-366q65.33-30.33 127.66-45.5 62.34-15.17 125.67-15.17t125.33 15.5q62 15.5 127.28 45.3 30.54 14.42 48.96 41.81Q800-296.67 800-260v100H160Zm66.67-66.67h506.66V-260q0-14.33-8.16-27-8.17-12.67-20.5-19-60.67-29.67-114.34-41.83Q536.67-360 480-360t-111 12.17Q314.67-335.67 254.67-306q-12.34 6.33-20.17 19-7.83 12.67-7.83 27v33.33ZM480-547.33q37 0 61.83-24.84Q566.67-597 566.67-634t-24.84-61.83Q517-720.67 480-720.67t-61.83 24.84Q393.33-671 393.33-634t24.84 61.83Q443-547.33 480-547.33Zm0-86.67Zm0 407.33Z"
+                                />
+                            </svg>
+                            <br />
+                            <span style="font-size: 1.2em; font-weight: bold"
+                                >Passageiro</span
+                            >
+                        </div>
+                        <input
+                            type="text"
+                            id="nome-pessoa"
+                            style="
+                                height: fit-content;
+                                width: 80%;
+                                font-size: 1.1rem;
+                            "
+                        />
+                    </div>
+                    <div
+                        style="
+                            display: flex;
+                            justify-content: space-around;
+                            margin-top: 4px;
+                        "
+                    >
+                        <button
+                            class="btn-azul"
+                            style="
+                                font-size: 1rem;
+                                background-color: gray;
+                                color: white;
+                            "
+                        >
+                            Cancelar
+                        </button>
+                        <button class="btn-azul" style="font-size: 1rem">
+                            Ok
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="black-overlay"></div>
+        <!-- Conteúdo da página -->
+        <div class="header" onclick="location.href = '..'">
+            Cabine Principal
+        </div>
+        <div class="aviao">
+            <!-- assento, column-label, row-label, empty-space -->
+            <!-- COLUNA 1 -->
+            <div class="row-label" id="row-label-1">1</div>
+            <div class="row-label" id="row-label-2">2</div>
+            <div class="row-label" id="row-label-3">3</div>
+            <div class="row-label empty-space"></div>
+            <div class="row-label" id="row-label-4">4</div>
+            <div class="row-label" id="row-label-5">5</div>
+            <div class="row-label" id="row-label-6">6</div>
+            <div class="row-label empty-space"></div>
+            <div class="row-label" id="row-label-7">7</div>
+            <div class="row-label" id="row-label-8">8</div>
+            <div class="row-label" id="row-label-9">9</div>
+            <!-- COLUNA 2 -->
+            <div class="assento" id="A1"></div>
+            <div class="assento" id="A2"></div>
+            <div class="assento" id="A3"></div>
+            <div class="column-label">A</div>
+            <div class="assento" id="A4"></div>
+            <div class="assento" id="A5"></div>
+            <div class="assento" id="A6"></div>
+            <div class="column-label">A</div>
+            <div class="assento" id="A7"></div>
+            <div class="assento" id="A8"></div>
+            <div class="assento" id="A9"></div>
+            <!-- COLUNA 3 -->
+            <div class="assento" id="B1"></div>
+            <div class="assento" id="B2"></div>
+            <div class="assento" id="B3"></div>
+            <div class="column-label">B</div>
+            <div class="assento" id="B4"></div>
+            <div class="assento" id="B5"></div>
+            <div class="assento" id="B6"></div>
+            <div class="column-label">B</div>
+            <div class="assento" id="B7"></div>
+            <div class="assento" id="B8"></div>
+            <div class="assento" id="B9"></div>
+            <!-- COLUNA 4 -->
+            <div class="assento" id="C1"></div>
+            <div class="assento" id="C2"></div>
+            <div class="assento" id="C3"></div>
+            <div class="column-label">C</div>
+            <div class="assento" id="C4"></div>
+            <div class="assento" id="C5"></div>
+            <div class="assento" id="C6"></div>
+            <div class="column-label">C</div>
+            <div class="assento" id="C7"></div>
+            <div class="assento" id="C8"></div>
+            <div class="assento" id="C9"></div>
+            <!-- COLUNA 5 -->
+            <div class="assento" id="D1"></div>
+            <div class="assento" id="D2"></div>
+            <div class="assento" id="D3"></div>
+            <div class="column-label">D</div>
+            <div class="assento" id="D4"></div>
+            <div class="assento" id="D5"></div>
+            <div class="assento" id="D6"></div>
+            <div class="column-label">D</div>
+            <div class="assento" id="D7"></div>
+            <div class="assento" id="D8"></div>
+            <div class="assento" id="D9"></div>
+            <!-- COLUNA 6 -->
+            <div class="assento" id="E1"></div>
+            <div class="assento" id="E2"></div>
+            <div class="assento" id="E3"></div>
+            <div class="column-label">E</div>
+            <div class="assento" id="E4"></div>
+            <div class="assento" id="E5"></div>
+            <div class="assento" id="E6"></div>
+            <div class="column-label">E</div>
+            <div class="assento" id="E7"></div>
+            <div class="assento" id="E8"></div>
+            <div class="assento" id="E9"></div>
+            <!-- COLUNA 7 -->
+            <div class="assento" id="F1"></div>
+            <div class="assento" id="F2"></div>
+            <div class="assento" id="F3"></div>
+            <div class="column-label">F</div>
+            <div class="assento" id="F4"></div>
+            <div class="assento" id="F5"></div>
+            <div class="assento" id="F6"></div>
+            <div class="column-label">F</div>
+            <div class="assento" id="F7"></div>
+            <div class="assento" id="F8"></div>
+            <div class="assento" id="F9"></div>
+            <!-- COLUNA 8 -->
+            <div class="assento" id="G1"></div>
+            <div class="assento" id="G2"></div>
+            <div class="assento" id="G3"></div>
+            <div class="column-label">G</div>
+            <div class="assento" id="G4"></div>
+            <div class="assento" id="G5"></div>
+            <div class="assento" id="G6"></div>
+            <div class="column-label">G</div>
+            <div class="assento" id="G7"></div>
+            <div class="assento" id="G8"></div>
+            <div class="assento" id="G9"></div>
+            <!-- COLUNA 9 -->
+            <div class="assento" id="H1"></div>
+            <div class="assento" id="H2"></div>
+            <div class="assento" id="H3"></div>
+            <div class="column-label">H</div>
+            <div class="assento" id="H4"></div>
+            <div class="assento" id="H5"></div>
+            <div class="assento" id="H6"></div>
+            <div class="column-label">H</div>
+            <div class="assento" id="H7"></div>
+            <div class="assento" id="H8"></div>
+            <div class="assento" id="H9"></div>
+            <!-- COLUNA 10 -->
+            <div class="assento" id="I1"></div>
+            <div class="assento" id="I2"></div>
+            <div class="assento" id="I3"></div>
+            <div class="column-label">I</div>
+            <div class="assento" id="I4"></div>
+            <div class="assento" id="I5"></div>
+            <div class="assento" id="I6"></div>
+            <div class="column-label">I</div>
+            <div class="assento" id="I7"></div>
+            <div class="assento" id="I8"></div>
+            <div class="assento" id="I9"></div>
+            <!-- COLUNA 11 -->
+            <div class="assento" id="J1"></div>
+            <div class="assento" id="J2"></div>
+            <div class="assento" id="J3"></div>
+            <div class="column-label">J</div>
+            <div class="assento" id="J4"></div>
+            <div class="assento" id="J5"></div>
+            <div class="assento" id="J6"></div>
+            <div class="column-label">J</div>
+            <div class="assento" id="J7"></div>
+            <div class="assento" id="J8"></div>
+            <div class="assento" id="J9"></div>
+        </div>
+        <div class="navbar">
+            <div
+                class="btn-azul"
+                onclick="window.location.href = './relatorio.html'"
+            >
+                Relatório
+            </div>
+            <div class="btn-azul" onclick="liberarAssentos();">Limpar</div>
+        </div>
+        <script>
+            function calcularTamanhoAssentos() {
+                const aviao = document.querySelector('.aviao');
+                const assento = document.querySelector('.assento');
+                let asntWidth, asntHeight;
+
+                // calcular tamanho padrão assentos
+                aviao.style = ``;
+                asntWidth = assento.offsetWidth;
+                asntHeight = assento.offsetHeight;
+                const cellSize = Math.min(asntWidth, asntHeight);
+
+                // definir estilo
+                aviao.style = `--cell-size: ${cellSize}px;`;
+
+                // se não fizer isso, o tamanho do div avião tomara o body todo. Imagino que vou colocar uma navbar e botões então é necessário
+                // aviao.style.flex = 'unset';
+                // aviao.style.height = 'unset';
+                // aviao.style.width = 'unset';
+            }
+
+            // Recalcular tamanho da grid quando tamanho da tela mudar
+            window.addEventListener('resize', calcularTamanhoAssentos);
+            calcularTamanhoAssentos();
+        </script>
+        <script src="../js/modules/modal.js"></script>
+        <script src="../js/modules/precos.js"></script>
+        <script src="../js/aviao.js"></script>
+        <script>
+            // openModal();
+        </script>
+    </body>
+</html>
+
+<!-- TODO: Fazer essa tela funcionar com celular deitado também! -->
