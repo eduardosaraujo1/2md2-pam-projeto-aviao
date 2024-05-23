@@ -9,11 +9,6 @@
     font-family: Satisfy cursive;
 }
 
-*:not(body) {
-    /* visibility: hidden; */
-    /* pra pode ve o fundo sem nd atrapalha */
-}
-
 body {
     display: flex;
     flex-direction: column;
